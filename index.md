@@ -820,14 +820,14 @@ c + b
 mgrid is one of numpy's most useful functions. it retruns an instance of a mesh-grid which could be used for creating coordinate arrays over some function. Please also review the  **mgrid.ipynb** jupyter notebook which is provided in the [tutorial files](#getting-started), especially the **speed-up** when comparing to for-loops .
 
 ```python
-x ,y = np.mgrid[-2:3:1, -2:3:1] # from -2 to 3 (exclusive) steps of 1 
-print x 
+y, x = np.mgrid[-2:3:1, -2:3:1] # from -2 to 3 (exclusive) steps of 1 
+print y 
 #array([[-2, -2, -2, -2, -2],
 #       [-1, -1, -1, -1, -1],
 #       [ 0,  0,  0,  0,  0],
 #       [ 1,  1,  1,  1,  1],
 #       [ 2,  2,  2,  2,  2]])
-print y
+print x
 #array([[-2, -1,  0,  1,  2],
 #       [-2, -1,  0,  1,  2],
 #       [-2, -1,  0,  1,  2],
@@ -1065,7 +1065,7 @@ Matplotlib *imshow()* is quite useful for visuallzing functions:
 
 ```python
 #You should recall this from the mgrid section, with small alterations
-x ,y = np.mgrid[-3:4:0.1, -3:4:0.1]
+y, x = np.mgrid[-3:4:0.1, -3:4:0.1]
 
 def f(x,y):
    return np.cos(x)*np.sin(y)
