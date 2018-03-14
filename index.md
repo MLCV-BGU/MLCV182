@@ -1094,7 +1094,12 @@ plt.imshow(fxy, interpolation="None", cmap = 'gray')
 cbar = plt.colorbar(ax=axes, anchor = (2,0)) 
 plt.show()
 ```
-<img src = "/Images/mgrid_colorbar.png" width=60% height=60% >
+<img src = "/Images/mgrid_colorbar1.png" width=60% height=60% >
+
+**Interpolation:** When debugging computer vision you sometimes have to take a close look at the actual pixels, and if you let imshow interpolate for you, you will see interpolation effect instead of the actual pixels. 
+Also worth noting in this context is that in MATLAB the default is exactly the opposite:
+if no argument is passed, imshow defaults to no interpolation.
+
 
 ## plotting in Ipython
 Taken from the official [documentation](https://matplotlib.org/users/shell.html)
