@@ -654,7 +654,7 @@ random_normal = np.random.randn((2,2)) # a 2x2 sampled from N(0,1)
 
 sigma = 2.5
 mu = 3
-random_normal2 = sigma*n.random.randn((2,2))+mu #a 2x2 sampled from N(3,2.5)
+random_normal2 = sigma*n.random.randn((2,2))+mu #a 2x2 sampled from N(3,6.25)=(mu,sigma^2)
 #      [[1.28169047, 1.64080373],
 #       [4.76906697, 3.05345461]]
 
